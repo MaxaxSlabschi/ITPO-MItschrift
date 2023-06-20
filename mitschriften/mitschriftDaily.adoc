@@ -1,0 +1,473 @@
+= AsciiDoc Mitschriften ITPO
+Maximilian Slabschi <author@asciidoctor.org>
+3.0, July 29, 2022: AsciiDoc article template
+:toc:
+:icons: font
+:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+
+== 28.11.22
+=== Stoff Test wichtig!
+* Pflichtenheft
+** Gegeben ist ein Beispiel wofür ein Pflichtenheft zu erstellen ist.
+
+* Git Branching Rules
+** Einzelne Punkte = Commits.
+** v0.1 (Releases, Version) = Tags.
+** Commit: quasi Version von Projekt.
+
+* Git
+** Welche möglichkeiten für Collaborator gibt es?
+    Alle Collaborator selber hinzufügen oder per Pull-Request.
+* Was ist HTML
+** HTML = Internet für Menschen
+** Restservices = Internet für Maschinen (Api)
+
+=== Weniger Wichtig!
+* Auftrag und antrag nicht so wichtig!
+
+=== Hausübung
+* Lesen Kapitel 7 im Buch (S 235), Systemanalyse und Anforderungen bis Fr.
+** Interview:  Ist die am häufigsten eingesetzte Aufnahmetechnik
+
+== 02.12.2022
+=== Use-Case-Diagramm Besprechung
+* Schnittstelle zw. Programm und User
+* Zeigt was man macht, nicht wie man es macht
+* Keine Pfeile
+* Wird umrandet von einem Systemrahmen
+
+=== V-Modell
+* System, Specification (System Spec)
+** technische Beschreibung
+** Pflichtenheft => zeigt was, nicht wie
+** Use-Case-Diagram
+
+* Design (Grobentwurf)
+** Grobentwurf: Kennzeichnung der Schnittstellen zwischen Komponenten
+** Schnittstellen sind wichtig für Collaboration (Zusammenarbeit), müssen miteinander funktionieren
+
+* Design (Feinentwurf)
+** Feinentwurf: Kennzeichnung als Klassendiagramm (genauer als Grobentwurf)
+** Problem Vereinfachung durch Problem Zerkleinerung, deshalb Grobentwurf und Feinentwurf
+
+* Implementierung
+** Zuvor angefertigtes Design in Code umsetzen
+
+* Modultest (Unittest)
+** Modul = Klasse
+
+* Integrationstest
+
+* Systemtest
+
+* Abnahmetest/Akzeptanztest
+
+== 09.12.2022
+NOTE: Pflichtenheft Vorlage auf Moodle
+
+=== 1.Interview
+TIP: Siehe Buch Seite 236
+
+* Formen
+** standardisiertes, halb oder nicht standardisiertes Interview
+** weiches, netrales oder hartes Interviewerverhalten
+** offene und geschlossene Frage:
+*** geschlossene Frage: nur mit ja nein Antwortbar
+*** offene Frage: mehrere Antworten möglich z.B. wie geht es dir
+** direkte indirekte Frage
+* Wird unterteilt in:
+** Interviewvorbereitung
+** Interviewdurchführung (3 Phasen)
+*** Einführungsphase:
+*** Befragungsphase
+*** Schlussphase
+** Interviewauswertung
+* Vorteile
+** Möglichkeit zur Vertiefung der Befragung durch Zusatzfragen
+** Möglichkeit zur Steigerung der Motivation des Befragten
+* Nachteile
+** hoher Zeitaufwand
+** hohe Anforderungen an die Qualifikation der Interviewer
+** Störung der Interviewten bei der Aufgabenerfüllung
+
+=== 2.Fragebogen
+* Indirekte Methode
+* Können verschieden gestalltet werden
+* Vorteile
+** schriftliche Ergebnisse
+** Anwendung der Wahrscheinlichkeitsrechnung
+** geringe Kosten
+* Nachteile
+** geringe Antwortqualitäten
+** Missverständnisse möglich
+** aufwendige Auswertung bei freien Fragen
+
+=== 3.Beobachtung
+TIP: Siehe Buch Seite 237
+
+* direkte Erfassungsmethoden
+* Formen:
+** offene/verdeckte Beobachtung =
+** strukturierte/unstrukturierte Beobachtung
+** aktiv teilnehmende/passive Beobachtung
+** Dauerbeobachtung oder unterbrochene Beobachtung
+
+=== 4.Selbstaufschreibung
+TIP: Siehe Buch Seite 238
+
+* strukturierte Aufzeichnung relevanter Ereignisse und Handlungen
+* Vorteile
+** Möglichkeit der Totalaufnahme
+** Entlassung des Systemplans
+* Nachteile
+
+=== 5.Dokumentationsauswertung
+* leicht verfügbare Informationsquelle
+
+=== 6.CRC
+TIP: Siehe Buch Seite 239
+// nicht so wichtig
+
+=== 7.Weitere Methoden zur Anforderungsanalyse
+TIP: Buch Seite 140
+
+* Methoden
+** Snowcards
+** Problem-Frames
+** ...
+
+=== Weitere Infos auf Stützpunkt
+
+== 16.12.2022
+=== Prüfungen
+** V-Modell + vollständige erklärung
+. Zeitachse (ganz unten vom V Modell),
+. Aufbau
+. WIE? WAS? WIE?
+. V-Modell= Beschreibt das Vorgehen, Vorgehensmodell:
+.. Analyse
+.. Design
+.. Realisierung
+.. Test
+
+. Validierung = "Machen wir die richtigen Dinge".
+
+** git flow
+** git branching rules (Main: Veröffentlichung der fertigen version, Development: entwicklung der versionen, Feature: LAUFFÄHIGE Zusatzfunktionen zum hinzufügen für Development)
+
+=== Vorgehensmodelle
+TIP: Dokument ist auf Moodle unter Vorgehensmodelle auf Moodle
+
+NOTE: Lauffähig ist wichiges Wort
+
+- V-Modell
+- beschreibt das Vorgehen
+- Unterscheidung zw. Klassisch und Agil (Flink beweglich)
+- Vorgehensmodelle:
+. Wasserfallmodell (eher negativ "kumotiert?")
+. Boehm
+. Byte
+. V-Modell
+. Scrum
+.. heißt so viel wie Haufen
+. Agile Vorgehensmodelle
+.. "flink, beweglich"
+.. bürokratische Strukturen sollen abgebaut werden
+.. Eine Möglichkeit Fokus auf das Ziel zu richten
+.. Eingehen auf technische und soziale Probleme
+.. Individuen und Interaktionen vor Prozessen (Interaktionen z.B. im Code Dokumentieren)
+.. Das Reagieren auf Veränderungen steht über dem Befolgen eines Planes.
+.. Product -> Sprint Backlog --0-> Sprint -> lauffähige inkrementell verbesserte Software
+.. Rollen in Scrum (Product Owner = fachlich Verantwortlich, Weis worum es geht | Scrum Master Fachlich Verantwortich | User, Stakeholder = benutzen direkt | Programmierer).
+.. Design der User Storys
+.. Sprint Backlog = Kombination aus was man macht, und bis wann.
+
+
+== 09.01.2023
+=== Youtrack
+** Projekt erstellt
+** Erstellen eines Containers mit MariaDB
+*** in einem Bind Mount sollen die Datenbankfiles gespeichert werden (db- Verzeichnis)
+*** Das `docker run` Komando soll in einem Shell-script `create db-container.sh` gespeichert werden
+*** Nach Ausführen des scripts soll der Conatiner erstellt werden
+*** Erstellung eines Scripts `kill-db-container.sh` (Container muss automatisch gelöscht werden [-rm])
+*** Nach einem neuerlichem Start müssen die Daten weider vorhanden sein
+*** Erstellen Sie in IntelliJ eine Datenbank-Connection zu Ihrer MariaDb[]
+NOTE: Video anschauen bis Fr.
+
+== 13.01.2023
+=== Vergleich plantuml Diagramm
+** Stammdaten: Daten die immer gelten (unperiodisch)
+** Bewegungsdaten: Daten die nur für einen kurzen Zeitraum (Periode) gelten
+
+== 16.01.2023
+=== Vergleich plantuml Diagramm
+NOTE: Keine Subklassen mit Vererbung verbinden
+
+** Verwendung von Vererbung
+** Verwendung von Tabelle mit Diskriminator
+** Anmerkungen nebenbei schaden nicht
+** Fachbereichsklassen: Klassen, die auch ohne Computer benötigt werden (z.B. Rechnungsheft und Rechnungen in Datei)
+** Grundsätzlich sind Stammdaten immer außen am Rand und Bewegungsdaten in der Mitte.
+
+== 27.02.2023
+=== Docker
+** Virtualisierung:
+*** Etwas wird nachgebildet, z.B. Hardware wird nachgebildet,
+*** Nachteil: Sehr langsam, verbraucht mehr Resourcen
+
+NOTE: Siehe Videos/Notes: https://2223-3ahitm-itp.github.io/2223-3ahitm-itp-lecture-notes/
+ &&
+https://htl-leonding-college.github.io/docker-lecture-notes/docker.html
+
+** Hosting: "Host" - Gastgeber, z.B. Webserver hostet eine Website / stellt bereit
+** Monolith: z.B. Stonehenge, Steinpfeiler ist nur 1 (man kann nichts wegnehmen sonst kaputt)
+
+== 10.03.2023
+=== Testen (V-MODELL)?
+** Mocken = Vortäuschen
+** V-Modell mit Scrum: Mehrere Aufgaben, bei jeder wird das V-Modell angewendet
+
+=== Junit - Matcher
+** Matcher = Vergleicht 2 Werte, gibt es im Bereich des Unittesting
+** Gibt mehrere Versionen
+** JDBC
+.. Java Database Connectivity
+.. jenkov.com -> JDBC Erklärung
+
+=== Matura
+** Fragenkatalog
+** 1 von vielen Fragen
+
+=== Aktivitätsdiagramm (Activity Diagramm - ACD)
+** Ablauf (Fortsetzung)
+** deterministisch = bestimmbar
+** Swimlanes
+
+NOTE: siehe Stützpunkt
+
+=== Zustandsmaschine
+** Ablauf (Forts.)
+** bedingungen in []-Klammern
+
+== 13.03.2023
+=== Docker
+TIP: Siehe unter Technlogy notes
+
+** LTS = Long time Support => Langzeit Unterstützung (Updates)
+** Unterschied zw. Bind Mount
+
+** und Volumes
+
+** Registry
+*** z.B. hub.docker.com
+*** Image: Wird ausgeführt => wird zu Container
+*** public oder private
+
+
+=== HÜ => Bis Montag
+** Erstellen eines Containers mit MariaDB
+*** in einem Bind Mount sollen die Datenbankfiles gespeichert werden (db- Verzeichnis)
+*** Das `docker run` Komando soll in einem Shell-script `create db-container.sh` gespeichert werden
+*** Nach Ausführen des scripts soll der Conatiner erstellt werden
+*** Erstellung eines Scripts `kill-db-container.sh` (Container muss automatisch gelöscht werden [-rm])
+*** Nach einem neuerlichem Start müssen die Daten weider vorhanden sein
+*** Erstellen Sie in IntelliJ eine Datenbank-Connection zu Ihrer MariaDb
+
+== 24.03.2023
+=== Docker
+* Docker ist eine leichtgewichtige Virtualisierung
+* Komponenten
+** Container
+** Image
+** Netzwerk
+** ev. Volume oder Bind-Mount
+
+=== Image
+* Image ist immutable und kann daher von mehreren Containern benutzt werden
+* Woher bekommt man ein Image?
+** Pullen von der Docker Registry
+** build mit einem Dockerfile (auch hier wird meist ein grundlegendes Image von einer Registry geholt)
+
+* Welche Registries gibt es?
+** Große öffentliche wie z.B.
+*** hub.docker.com
+*** quay.io
+*** ghcr.io (Docker Registry von Github)
+*** ...
+** Man kann eine eigene Registry hosten
+*** https://hub.docker.com/_/registry
++
+=== Dockerfile
+* Vergleichbar mit einem Kochrezept oder mit einem Shell-script
+* Die Befehle werden sequenziell abgearbeitet
+* Die Statements (einzelnen Befehle) werden oft mit einem && verbunden => sie werden nacheinander ausgeführt
+* Dies ist wichtig, da docker für jedes einzelne Kommando eine eigene Schicht erstellt
+
+
+* Webserver: Protokoll, eigener Webdienst, stellt Webseiten bereit
+
+
+== 27.03.2023
+=== Vergleich Test
+==== 2a
+. docker run --rm --name my-postgres-db
+    -v ${pwd}/data:/var/lib/postgressql/data/
+    -p postgres-db 5432:8888/
+    -e POSTGRES_PASSWORD = "passme"/
+    postgres: 15.2
+
+==== 2b Git Kommandos
+. "git add Foo.java Bar.java"
+. "git status"
+. "git branch bugfix"
+. "git checkout bugfix" / "git switch bugfix"
+. "git checkout main" und "git merge bugfix"
+
+==== 2e
+. Verantwortungsbereiche, wer macht was?
+
+== 31.03.2023
+=== Docker
+* Befehle
+** docker run --rm // --rm = nach stoppen löschen
+-v ${pwd}/data:/usr/share/nginx/html //eigenes Verzeichnis:and. Verzeichnis
+-p 8081:80 // port
+--name nginx //name
+nginx // image
+
+** docker exec -it nginx/bin/bash
+
+== 14.04.2023
+* Interfaces, Listen: Klassen die zum Programmieren benötigt werden
+* Entität: Die dinge die gespeichert werden sollen?
+* 1. Normalform:
+. Tabelle mit Name -> mit nur einem input
+. Ein Relationenschema befindet sich in der 1. Normalform, wenn alle seine Attribute einfach und einwertig sind.
+. Jedem Datenfeld eines Datensatzes darf höchstens ein Wert     zugewiesen sein. D.h. es dürfen keine Mehrfacheinträge in einem Datenfeld vorliegen und Attribute müssen atomar sein.
+
+* 2. Normalform:
+. Abhängigkeit von einem Primärschlüssel -> D ist Abhängig von A (AB = zusammengesetzter Primärschlüssel)
+. Tabelle erfüllt bereits die 1. Normalform
+. Eine Tabelle enthält nur Daten eines Themen- bzw. Informationsbereiches.
+. Aufteilung in mehrere Tabellen nach Themen/ Informationsgebieten.
+
+* 3. Normalform:
+. Ist dann erfüllt, wenn die Tabelle die 2. Normalform erfüllt
+. Es dürfen keine transitiven (indirekten) Abhängigkeiten vorliegen
+. Entfernung aller transitiven Abhängigkeiten durch Aufspalten der Tabelle in mehrere Tabellen, in denen alle Nicht-Schlüsselfelder direkt vom gesamten Schlüsselfeld abhängen
+
+TIP: für informationen siehe JENKOV jdbc
+
+=== Projekt
+==== Testen
+* Datenbanken:
+** CRUD-Funktionalität
+*** Create - Erstellen eines Datensatzes einer Entity Klasse in der Entity Tabelle
+*** Read - Lesen eines Datensatzes und erstellen des zugehörigen Java - Objekts
+*** Update - Ändern eines Java - Objekts und diese Änderungen werden in der zugehörigen DB-Tabelle gespeichert
+*** DELETE - Löschen eines Java - Objekts mit dazugehörigen Löschen in der Datenbank
+
+TIP: Siehe Stützpunkt
+
+== 24.04.2023
+
+NOTE: https://htl-leonding-college.github.io/docker-lecture-notes/docker-compose.html#bookmark-document-start[Für mehr siehe hier]
+
+=== Docker compose
+* *Datenbank*  <- jdbc -> *backend* <- rest(Internet für Maschinen + Prozesse) -> *frontend* <- html(Internet für Menschen) + http -> *User*
+* Datenbank, backend, frontend: Container bzw. Services (Werden ge-imaged)
+* docker-compose down -d: Löscht sämtliche Container
+* CalVer: Kalender Versionierung z.B. 2023.1.9
+** 2023 <- Jahr, 1 <- Version, 9 <- Patches ...
+
+== 28.04.2023
+=== Dockerfile
+* Ist vergleichbar mit einem Shellscript
+
+* *Path* - Variable: Betriebssystem sucht überall, ob er das gesuchte findet
+** Ohne sucht das BS nur im aktuellen Verzeichnis
+
+=== Builder Commands
+* FROM <imagescratch>: Basis Image für das builden
+* MAINTAINER <email>: Name des Maintainers
+* COPY <path dst>: Kopieren des Pfads in den Container der sich bei Pfad dst befindet
+* ADD <src dst>: Gleich wie COPY
+* RUN <args ...>: Führt einen Kommand im Container aus
+* USER <name>: Username setzen
+* WORKDIR <path>: Default working directory setzen
+* CMD <args ...>: Standard Kommands setzen
+* ENV <name value>: Environmentvariable erstellen
+
+=== Docker Network
+* Konfiguriert die Verbindung zwischen Container und Internet
+* Man verwendet Docker CLI
+* Networkdrivers:
+** Bridge
+** Host
+** Overlay
+** Macvlan
+** None
+
+=== Webserver erstellen
+* Quarkus 3.0
+** POSTGRES jdbc
+** HIBERNATE ORM with Panache
+** Maven bei Packagemanager einstellen
+* Generate your application -> Github
+* In IntelliJ Aufmachen
+
+
+* Maven: Package Manager
+
+== 02.06.2023
+=== Test (nach Lehrer):
+. Klassendiagram: 6 Klassen (Person, Enrollment, Role, Participation, Event, Nursery Group)
+
+== 05.06.2023
+=== Verbesserung test
+==== 2. a
+DOCKERFILE -> BUILDPROZESS -> IMAGE -> CONTAINER
+. *FROM* Postgres:15   -   das Basisimage zum bauen des files festlegen
+. *ENV* db=xy   -   Setzt im build Prozess Umgebungsvariablen
+. *COPY* src/test   -   Kopiert Daten vom Host in das Image
+. *RUN* apt install jdk...   -   Führt befehl im buildprozess aus
+. *WORKDIR* /home/test   -   Setzt das aktuelle Arbeitsverzeichnis (Nachfolgende Befehle werden dort ausgeführt)
+. *EXPOSE* 80   -   Gibt den Port an, dient nur zur Dokumentation
+. *CMD* ...   -   Führt Befehle im Container aus
+
+==== 2. b
+. *fork*: Das Repo vom Host(remote github) wird in dein Repo geforkt (kopiert)
+. *pull-request*: Anfrage ans Original Repo, ob eigener commit gepusht werden darf
+. *template repo*: Beim erstellen eines neuen Repo's kann man ein Vorlage-repo angeben, um beim repo eine Grundstruktur zu erhalten
+. *gh-page*: HTML-Seite kann hineingestellt werden, um wie bei einem Webserver angezeigt zu werden
+. *tagging*: Markerl, damit kann ein commit markiert/gekennzeichnet werden
+
+== 19.06.2023
+=== Bessere Note
+* Youtrack: User Stories, Tasks, Issues eintragen
+* Projekt: Testfälle erstellen
+
+=== Unterricht
+* Top.Down lernen anstatt schnell auswendig lernen z.B. (Was für probleme löst git, dann erst weiter vertiefen)
+* Fachbegriffe auswendig lernen ist ok
+
+=== Prüfung andere Klasse
+* Aufgabe 1: Zustandsdiagram erstellen zu Fallbeispiel Kontostand
+* Aufgabe 2a: Dockerbuild Kommandos
+** FROM
+** ENV
+** CPOY
+** RUN
+** WORKDIR
+** EXPOSE
+** CMD
+
+* Aufgabe 2b git-begriffe
+** fork
+** template Repo
+** pull request
+** gh pages
+** tagging
+
+* Aufgabe 2c

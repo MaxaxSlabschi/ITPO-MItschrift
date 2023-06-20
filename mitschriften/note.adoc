@@ -1,0 +1,46 @@
+= AsciiDoc Note ITPO
+Maximilian Slabschi <m.slabschi@students.htl-leonding.ac.at>
+3.0, July 29, 2022: AsciiDoc article template
+:toc:
+:icons: font
+:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+
+== Betreff
+* In diesem AsciiDoc File geht es um die Begründung, warum ich Maximilian Slabschi die Note 4 in dem Fach ITPO verdiene.
+
+== Begründungen
+* Nun folgt eine Reihe von Begründungen, warum ich, meiner Meinung nach die Note 4 verdiene.
+
+=== 1. Meine gebrachten Leistungen
+* Der erste Höhepunkt in dem Semester war mein Projektantrag, bei dem ich mir ein `+` gesichert habe.
+* Außerdem habe in allen Stunden, welche Sie gehalten haben, mit dokumentiert, was man meiner Meinung nach zur Mitarbeit zählen kann.
+
+TIP: Die Dokumentation und diesen Artikel finden Sie unter diesem https://github.com/MaxaxSlabschi/ITPO-Mitschrift[link^]
+
+* Die Übungen, sei es die `docker-compose` Übung oder die des Schreiben eines Images, habe ich alle erledigt und auch auf github hochgeladen.
+* Auch will ich anmerken, dass ich in den Tests, welche wir im Wintersemester abgehalten haben, positiv war und somit auch im Winters-Zeugnis positiv war.
+* Dazu kommt der 1. Test des Sommersemesters, den ich auch positiv abgelegt habe.
+
+=== 2. Projekt und Meine Arbeit daran
+==== Projekt
+* Hiermit beantrage ich eine Steigung des Notengrads im Bereich Praxis auf die Note 4.
+* Am Anfang des Projekts kann man feststellen, dass man bei mir nicht so viel Commits vorhanden sind.
+* Dies lässt sich auf den Punkt zurückführen, dass wir Anfangs die Aufgaben in der Schule gemacht/zu Hause zusammen in einem Call.
+* Somit hat nur eine Person z.B das Pflichtenheft geschrieben und die anderen Projektmitglieder haben mitgeholfen, indem sie Antworten oder Lösungen gaben was zu schreiben ist.
+* Deshalb wäre es nicht gerecht, wenn man die anderen dafür nicht benotet
+* Kleinere Fixes wurden nach dem Feedback von Ihnen selbst gemacht.
+
+==== Meine Projektleistungen
+* Wie schon erwähnt ist am Anfang die Bewertung nicht wirklich per Commits auf die Personen zurückzuführen.
+* Die einzigen Commits, welche man sieht, sind Fixes beim Projekt.
+* Erst heute habe ich Tests geschrieben, welche die CRUD-Funktionen bei unserem Projekt testen.
+* Auch habe ich bei Youtrack ein bisschen weiter gearbeitet und die card's-Einteilung ein bisschen umgeändert und neue hinzugefügt.
+* Bei der Card `Testen Anlegen Benutzer` sind auch die commits zu sehen.
+* Nebenbei arbeite ich auch gerade am README.adoc, da Sie meinten, wir sollen dies umändern.
+* Bis Freitag wird das neue README.adoc auf jeden Fall fertig sein.
+
+== Abschluss
+* Es würde mich freuen, wenn Sie meinen Forderungen entgegenkommen und ich somit in die nächste Klasse aufsteigen kann.
+
+Mit Freundlichen Grüßen,
+Maximilian Slabschi

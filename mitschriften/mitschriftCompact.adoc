@@ -1,0 +1,238 @@
+= Mitschrift Kompakt
+Maximilian Slabschi
+3.0, July 29, 2022: AsciiDoc article template
+:toc:
+:icons: font
+:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+
+== Projekt
+=== Use-Case-Diagramm
+* Schnittstelle zw. Programm und User
+* Zeigt was man macht, nicht wie man es macht
+* Keine Pfeile
+* Wird umrandet von einem Systemrahmen
+
+=== Vorgehensmodelle
+TIP: Dokument ist auf Moodle unter Vorgehensmodelle auf Moodle
+
+NOTE: Lauffähig ist wichiges Wort
+
+- V-Modell
+- beschreibt das Vorgehen
+- Unterscheidung zw. Klassisch und Agil (Flink beweglich)
+- Vorgehensmodelle:
+. Wasserfallmodell (eher negativ "kumotiert?")
+. Boehm
+. Byte
+. V-Modell
+. Scrum
+.. heißt so viel wie Haufen
+. Agile Vorgehensmodelle
+.. "flink, beweglich"
+.. bürokratische Strukturen sollen abgebaut werden
+.. Eine Möglichkeit Fokus auf das Ziel zu richten
+.. Eingehen auf technische und soziale Probleme
+.. Individuen und Interaktionen vor Prozessen (Interaktionen z.B. im Code Dokumentieren)
+.. Das Reagieren auf Veränderungen steht über dem Befolgen eines Planes.
+.. Product -> Sprint Backlog --0-> Sprint -> lauffähige inkrementell verbesserte Software
+.. Rollen in Scrum (Product Owner = fachlich Verantwortlich, Weis worum es geht | Scrum Master Fachlich Verantwortich | User, Stakeholder = benutzen direkt | Programmierer).
+.. Design der User Storys
+.. Sprint Backlog = Kombination aus was man macht, und bis wann.
+
+=== V-Modell
+* System, Specification (System Spec)
+** technische Beschreibung
+** Pflichtenheft => zeigt was, nicht wie
+** Use-Case-Diagram
+** Mocken = Vortäuschen
+** V-Modell mit Scrum: Mehrere Aufgaben, bei jeder wird das V-Modell angewendet
+
+* Design (Grobentwurf)
+** Grobentwurf: Kennzeichnung der Schnittstellen zwischen Komponenten
+** Schnittstellen sind wichtig für Collaboration (Zusammenarbeit), müssen miteinander funktionieren
+
+* Design (Feinentwurf)
+** Feinentwurf: Kennzeichnung als Klassendiagramm (genauer als Grobentwurf)
+** Problem Vereinfachung durch Problem Zerkleinerung, deshalb Grobentwurf und Feinentwurf
+
+* Implementierung
+** Zuvor angefertigtes Design in Code umsetzen
+
+* Modultest (Unittest)
+** Modul = Klasse
+
+* Integrationstest
+
+* Systemtest
+
+* Abnahmetest/Akzeptanztest
+
+=== Vergleich plantuml Diagramm
+** Stammdaten: Daten die immer gelten (unperiodisch)
+** Bewegungsdaten: Daten die nur für einen kurzen Zeitraum (Periode) gelten
+
+NOTE: Keine Subklassen mit Vererbung verbinden
+
+** Verwendung von Vererbung
+** Verwendung von Tabelle mit Diskriminator
+** Anmerkungen nebenbei schaden nicht
+** Fachbereichsklassen: Klassen, die auch ohne Computer benötigt werden (z.B. Rechnungsheft und Rechnungen in Datei)
+** Grundsätzlich sind Stammdaten immer außen am Rand und Bewegungsdaten in der Mitte.
+
+=== Aktivitätsdiagramm (Activity Diagramm - ACD)
+** Ablauf (Fortsetzung)
+** deterministisch = bestimmbar
+** Swimlanes
+
+NOTE: siehe Stützpunkt
+
+=== Zustandsmaschine
+** Ablauf (Forts.)
+** bedingungen in []-Klammern
+
+== Interview Methoden
+TIP: Siehe Buch Seite 236
+
+* Formen
+** standardisiertes, halb oder nicht standardisiertes Interview
+** weiches, netrales oder hartes Interviewerverhalten
+** offene und geschlossene Frage:
+*** geschlossene Frage: nur mit ja nein Antwortbar
+*** offene Frage: mehrere Antworten möglich z.B. wie geht es dir
+** direkte indirekte Frage
+* Wird unterteilt in:
+** Interviewvorbereitung
+** Interviewdurchführung (3 Phasen)
+*** Einführungsphase:
+*** Befragungsphase
+*** Schlussphase
+** Interviewauswertung
+* Vorteile
+** Möglichkeit zur Vertiefung der Befragung durch Zusatzfragen
+** Möglichkeit zur Steigerung der Motivation des Befragten
+* Nachteile
+** hoher Zeitaufwand
+** hohe Anforderungen an die Qualifikation der Interviewer
+** Störung der Interviewten bei der Aufgabenerfüllung
+
+=== Fragebogen
+* Indirekte Methode
+* Können verschieden gestalltet werden
+* Vorteile
+** schriftliche Ergebnisse
+** Anwendung der Wahrscheinlichkeitsrechnung
+** geringe Kosten
+* Nachteile
+** geringe Antwortqualitäten
+** Missverständnisse möglich
+** aufwendige Auswertung bei freien Fragen
+
+=== Beobachtung
+TIP: Siehe Buch Seite 237
+
+* direkte Erfassungsmethoden
+* Formen:
+** offene/verdeckte Beobachtung =
+** strukturierte/unstrukturierte Beobachtung
+** aktiv teilnehmende/passive Beobachtung
+** Dauerbeobachtung oder unterbrochene Beobachtung
+
+=== Selbstaufschreibung
+TIP: Siehe Buch Seite 238
+
+* strukturierte Aufzeichnung relevanter Ereignisse und Handlungen
+* Vorteile
+** Möglichkeit der Totalaufnahme
+** Entlassung des Systemplans
+* Nachteile
+
+=== Dokumentationsauswertung
+* leicht verfügbare Informationsquelle
+
+=== CRC
+TIP: Siehe Buch Seite 239
+// nicht so wichtig
+
+==== Weitere Methoden zur Anforderungsanalyse
+TIP: Buch Seite 140
+
+== Docker
+=== Begrifflichkeiten
+** Virtualisierung:
+*** Etwas wird nachgebildet, z.B. Hardware wird nachgebildet,
+*** Nachteil: Sehr langsam, verbraucht mehr Resourcen
+
+NOTE: Siehe Videos/Notes: https://2223-3ahitm-itp.github.io/2223-3ahitm-itp-lecture-notes/
+&&
+https://htl-leonding-college.github.io/docker-lecture-notes/docker.html
+
+** Hosting: "Host" - Gastgeber, z.B. Webserver hostet eine Website / stellt bereit
+** Monolith: z.B. Stonehenge, Steinpfeiler ist nur 1 (man kann nichts wegnehmen sonst kaputt)
+
+** LTS = Long time Support => Langzeit Unterstüt zung (Updates)
+** Unterschied zw. Bind Mount
+
+** und Volumes
+
+** Registry
+*** z.B. hub.docker.com
+*** Image: Wird ausgeführt => wird zu Container
+*** public oder private
+* Webserver: Protokoll, eigener Webdienst, stellt Webseiten bereit
+
+=== Definition
+* Docker ist eine leichtgewichtige Virtualisierung
+* Komponenten
+** Container
+** Image
+** Netzwerk
+** ev. Volume oder Bind-Mount
+
+=== Dockerfile
+* Vergleichbar mit einem Kochrezept oder mit einem Shell-script
+* Die Befehle werden sequenziell abgearbeitet
+* Die Statements (einzelnen Befehle) werden oft mit einem && verbunden => sie werden nacheinander ausgeführt
+* Dies ist wichtig, da docker für jedes einzelne Kommando eine eigene Schicht erstellt
+
+==== Builder Commands
+* FROM <imagescratch>: Basis Image für das builden
+* MAINTAINER <email>: Name des Maintainers
+* COPY <path dst>: Kopieren des Pfads in den Container der sich  bei Pfad dst befindet
+* ADD <src dst>: Gleich wie COPY
+* RUN <args ...>: Führt einen Kommand im Container aus
+* USER <name>: Username setzen
+* WORKDIR <path>: Default working directory setzen
+* CMD <args ...>: Standard Kommands setzen
+* ENV <name value>: Environmentvariable erstellen
+
+=== Docker Image
+* Image ist immutable und kann daher von mehreren Containern benutzt werden
+* Woher bekommt man ein Image?
+** Pullen von der Docker Registry
+** build mit einem Dockerfile (auch hier wird meist ein grundlegendes Image von einer Registry geholt)
+
+* Welche Registries gibt es?
+** Große öffentliche wie z.B.
+*** hub.docker.com
+*** quay.io
+*** ghcr.io (Docker Registry von Github)
+*** ...
+** Man kann eine eigene Registry hosten
+*** https://hub.docker.com/_/registry
+
+=== Docker compose
+* *Datenbank*  <- jdbc -> *backend* <- rest(Internet für Maschinen + Prozesse) -> *frontend* <- html(Internet für Menschen) + http -> *User*
+* Datenbank, backend, frontend: Container bzw. Services (Werden ge-imaged)
+* docker-compose down -d: Löscht sämtliche Container
+* CalVer: Kalender Versionierung z.B. 2023.1.9
+** 2023 <- Jahr, 1 <- Version, 9 <- Patches ...
+
+=== Docker Network
+* Konfiguriert die Verbindung zwischen Container und Internet
+* Man verwendet Docker CLI
+* Networkdrivers:
+** Bridge
+** Host
+** Overlay
+** Macvlan
+** None
